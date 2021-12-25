@@ -25,7 +25,7 @@ public class MockData {
     }
 
     public static List<Car> getCars() throws IOException{
-        InputStream inputStream = Resources.getResource("car.json").openStream();
+        InputStream inputStream = Resources.getResource("cars.json").openStream();
         String json = IOUtils.toString(inputStream, StandardCharsets.UTF_8);
         Type listType = new TypeToken<ArrayList<Car>>(){
         }.getType();
