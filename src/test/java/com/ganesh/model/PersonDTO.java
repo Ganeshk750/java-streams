@@ -32,4 +32,12 @@ public class PersonDTO {
                 ", age=" + age +
                 '}';
     }
+
+    public static PersonDTO map(Person person){
+        return  new PersonDTO(
+                person.getId(),
+                person.getFirstName(),
+                person.getAge()
+        );
+    }
 }
